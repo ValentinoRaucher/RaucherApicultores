@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raucher Apicultores - Miel Natural</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Miel/logo og.jpeg" alt="Raucher Apicultores">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#products">Productos</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Miel 100% Natural de Alta Calidad</h1>
+            <p>Descubre nuestra selección premium de mieles artesanales, producidas con pasión y cuidado en nuestras colmenas.</p>
+            <a href="#products" class="btn-primary">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-id="1" data-name="Miel Osito 300g" data-price="100">
+                    <div class="product-image">
+                        <img src="Miel/osito_sobre_mano.jpeg" alt="Miel Osito 300g">
+                    </div>
+                    <div class="product-info">
+                        <h3>Miel Osito</h3>
+                        <p>Miel natural de alta calidad en envase de 300g</p>
+                        <div class="product-price">$150</div>
+                        <button class="btn-add-to-cart" data-id="1">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-id="2" data-name="Miel Bidón" data-price="1600">
+                    <div class="product-image">
+                        <img src="Miel/bidon con logo (1).jpeg" alt="Miel Bidón 9kg">
+                    </div>
+                    <div class="product-info">
+                        <h3>Miel Bidón</h3>
+                        <p>Miel natural de alta calidad en bidón de 9kg</p>
+                        <div class="product-price">$1600</div>
+                        <button class="btn-add-to-cart" data-id="2">Agregar al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-id="3" data-name="Miel Frasco 1kg" data-price="250">
+                    <div class="product-image">
+                        <img src="Miel/kg ventana.jpeg" alt="Miel Frasco 1kg">
+                    </div>
+                    <div class="product-info">
+                        <h3>Miel Frasco</h3>
+                        <p>Miel natural de alta calidad en frasco de 1kg</p>
+                        <div class="product-price">$250</div>
+                        <button class="btn-add-to-cart" data-id="3">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>En Raucher Apicultores, llevamos más de 20 años dedicados a la producción de miel natural de la más alta calidad. Nuestra pasión por las abejas y el cuidado del medio ambiente nos ha permitido crear productos únicos que combinan tradición y excelencia.</p>
+                    <p>Cada frasco de nuestra miel contiene el esfuerzo de miles de abejas y el compromiso de nuestra familia por ofrecer un producto 100% natural, sin aditivos ni conservantes.</p>
+                </div>
+                <div class="about-image">
+                    <img src="Miel/logo kg aire libre.png" alt="Proceso de producción">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Ubicación: Río Negro 1170 (Barrio Sur, Montevideo)</p>
+                    <p><i class="fas fa-phone"></i> Teléfono: 092 779 827</p>
+                    <p><i class="fas fa-envelope"></i> Email: raucherapicultores@gmail.com</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Envíanos un mensaje</h3>
+                    <form id="messageForm">
+                        <input type="text" placeholder="Tu nombre" required>
+                        <input type="email" placeholder="Tu email" required>
+                        <textarea placeholder="Tu mensaje" required></textarea>
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <div class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div class="cart-items">
+                <!-- Cart items will be added here dynamically -->
+                <p class="empty-cart-message">Tu carrito está vacío</p>
+            </div>
+            <div class="cart-total">
+                <h3>Total: $<span id="totalAmount">0</span></h3>
+                <button id="checkoutBtn" class="btn-primary">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Info Modal -->
+    <div class="customer-info-modal">
+        <div class="customer-info-content">
+            <span class="close-customer-info">&times;</span>
+            <h2>Datos del Cliente</h2>
+            <p>Por favor, ingresa tus datos para completar la compra:</p>
+            <form id="customerInfoForm">
+                <div class="form-group">
+                    <label for="customerName">Nombre Completo *</label>
+                    <input type="text" id="customerName" name="customerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerPhone">Celular *</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" required>
+                </div>
+                <div class="form-group">
+                    <label>Selecciona una opción de entrega:</label>
+                    <div class="delivery-options">
+                        <div class="delivery-option">
+                            <input type="radio" id="pickup" name="deliveryOption" value="Retiro en el Local" required>
+                            <label for="pickup">Retiro en el Local</label>
+                        </div>
+                        <div class="delivery-option">
+                            <input type="radio" id="delivery" name="deliveryOption" value="Envío a Domicilio" required>
+                            <label for="delivery">Envío a Domicilio</label>
+                        </div>
+                        <div class="form-group" id="deliveryDetails" style="display: none;">
+                            <label for="department">Departamento *</label>
+                            <select id="department" name="department">
+                                <option value="">Selecciona un departamento</option>
+                                <option value="Artigas">Artigas</option>
+                                <option value="Canelones">Canelones</option>
+                                <option value="Cerro Largo">Cerro Largo</option>
+                                <option value="Colonia">Colonia</option>
+                                <option value="Durazno">Durazno</option>
+                                <option value="Flores">Flores</option>
+                                <option value="Florida">Florida</option>
+                                <option value="Lavalleja">Lavalleja</option>
+                                <option value="Maldonado">Maldonado</option>
+                                <option value="Montevideo">Montevideo</option>
+                                <option value="Paysandú">Paysandú</option>
+                                <option value="Rio Negro">Rio Negro</option>
+                                <option value="Rivera">Rivera</option>
+                                <option value="Rocha">Rocha</option>
+                                <option value="Salto">Salto</option>
+                                <option value="San José">San José</option>
+                                <option value="Soriano">Soriano</option>
+                                <option value="Tacuarembó">Tacuarembó</option>
+                                <option value="Treinta y Tres">Treinta y Tres</option>
+                            </select>
+                        </div>
+                            <div class="form-group" id="cityDetails" style="display: none;">
+                                <label for="customerCity">Ciudad *</label>
+                                <input type="text" id="customerCity" name="customerCity" tabindex="0" aria-label="Ciudad">
+                            </div>
+                            <div class="form-group" id="addressDetails" style="display: none;">
+                                <label for="customerAddress">Dirección *</label>
+                                <input type="text" id="customerAddress" name="customerAddress" tabindex="0" aria-label="Dirección">
+                            </div>
+                    </div>
+                </div>
+                <div class="cart-total" id="checkoutTotal">
+                    <h3>Total: $<span id="checkoutTotalAmount">0</span></h3>
+                </div>
+                <button type="submit" class="btn-primary">Continuar con el Pago</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Miel/logo og.jpeg" alt="Raucher Apicultores">
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Inicio</a>
+                    <a href="#products">Productos</a>
+                    <a href="#about">Nosotros</a>
+                    <a href="#contact">Contacto</a>
+                </div>
+<div class="footer-social">
+    <a href="https://www.instagram.com/raucher_apicultores/" class="instagram-link"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/59892779827"><i class="fab fa-whatsapp"></i></a>
+</div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vr Code Studio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+    <script src="script.js"></script>
+    <script src="lazy-loading.js"></script>
+        <a href="https://wa.me/59892779827?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20sus%20productos%20de%20miel%20natural." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</body>
+</html>
